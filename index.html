@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href= "style.css">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <title>Converter</title>
+        <script type="text/javascript" defer src="calculator.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="num-bar">
+                <input type="text" class="display" id="Display" readonly size="18"></input>
+            </div>
+            <div class="first-row buttons">
+                <input type="button" class="clear" value="C" onclick='calculate("")'></input>
+            </div>
+            <div class="second-row buttons">
+                <input type="button" class="button" value="7" onclick='values("7")'></input>
+                <input type="button" class="button" value="8" onclick='values("8")'></input>
+                <input type="button" class="button" value="9" onclick='values("9")'></input>
+                <input type="button" class="button symbols" value="*" onclick='values("*")'></input>
+            </div>
+            <div class="third-row buttons">
+                <input type="button" class="button" value="4" onclick='values("4")'></input>
+                <input type="button" class="button" value="5" onclick='values("5")'></input>
+                <input type="button" class="button" value="6" onclick='values("6")'></input>
+                <input type="button" class="button symbols" value="+" onclick='values("+")'></input>
+            </div>
+            <div class="fourth-row buttons">
+                <input type="button" class="button" value="1" onclick='values("1")'></input>
+                <input type="button" class="button" value="2" onclick='values("2")'></input>
+                <input type="button" class="button" value="3" onclick='values("3")'></input>
+                <input type="button" class="button symbols" value="-" onclick='values("-")'></input>
+            </div>
+            <div class="fifth-row buttons">
+                <input type="button" class="button symbols" value="." onclick='values(".")'></input>
+                <input type="button" class="button" value="0" onclick='values("0")'></input>
+                <input type="button" class="result" value="=" onclick='res()'></input>
+                <input type="button" class="button symbols" value="/" onclick='values("/")'></input>
+            </div>
+        </div>
+    </body>
+</html>
